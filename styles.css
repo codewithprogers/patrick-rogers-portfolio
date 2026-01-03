@@ -102,3 +102,20 @@ a {
   max-width: 65ch;
   line-height: 1rem;
 }
+
+.containerTwo {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.box {
+  width: 27rem;
+  border: 1px solid black;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
