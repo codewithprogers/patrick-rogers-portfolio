@@ -12,7 +12,8 @@ body {
   font-family: "Helvetica", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #111;
+  color: #292c21;
+  background-color: #f4f4ee;
   display: flex;
   flex-direction: column;
 }
@@ -50,14 +51,14 @@ a {
 }
 
 .nav a {
-  color: #111;
+  color: #292c21;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 500;
   transition: color 0.2s ease-in-out;
 }
 
 .nav a:hover {
-  color: #10B981;
+  color: #b6c754;
 }
 
 .logo {
@@ -67,7 +68,7 @@ a {
 }
 
 .logo a {
-  color: #111;
+  color: #292c21;
   text-decoration: none;
   display: flex;
   flex-direction: column;
