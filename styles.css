@@ -110,7 +110,7 @@ a {
   max-width: 65ch;
 }
 
-.containerTwo {
+.work .container {
   margin-top: 4rem;
   display: flex;
   justify-content: center;
@@ -123,8 +123,48 @@ a {
   border-radius: 15px;
 }
 
-img {
+.work img {
   display: block;
   width: 100%;
   border-radius: 15px;
+}
+
+.categoryHeader {
+  margin-top: 4rem;
+}
+
+.categoryHeader .container {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+}
+
+.dartTitle{
+  display: flex;
+  flex-direction: column;
+}
+
+.dartFirst {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.dartLast {
+  font-family: "Playfair Display", serif;
+  font-size: 3.7rem;
+  font-weight: 600;
+  margin-top: -2.5rem;
+}
+
+.container .masterCard {
+  width: 30rem;
+  /* border: 1px solid black; */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.categoryHeader img {
+  display: block;
+  width: 100%;
 }
