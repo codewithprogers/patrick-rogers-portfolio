@@ -140,6 +140,12 @@ a {
   padding-bottom: 1rem;
 }
 
+.projectCardsContainer {
+  display: flex;
+  flex-shrink: 0;
+  gap: 10rem;
+}
+
 .projectIntro {
   min-width: 30vw;
   display: flex;
@@ -174,6 +180,10 @@ a {
   flex-shrink: 0;
 }
 
+.projectCard--center {
+  align-items: center;
+}
+
 .projectText {
   display: flex;
   flex-direction: column;
@@ -188,6 +198,10 @@ a {
   font-family: "Roboto Condensed", sans-serif;
   font-size: .6rem;
   max-width: 23rem;
+}
+
+.projectDescription--width {
+  max-width: 20rem;
 }
 
 .container .mastercard {
