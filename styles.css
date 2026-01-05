@@ -133,15 +133,24 @@ a {
   margin-top: 4rem;
 }
 
-.categoryHeader .container {
+.projectScroller {
   display: flex;
-  /* border: 1px solid black; */
-  justify-content: space-between;
+  gap: 4rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.projectIntro {
+  min-width: 30vw;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .dartTitle{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .dartFirst {
@@ -157,11 +166,34 @@ a {
   margin-top: -2.5rem;
 }
 
-.container .masterCard {
+.projectCard {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  min-width: 900px;
+  flex-shrink: 0;
+}
+
+.projectText {
+  display: flex;
+  flex-direction: column;
+}
+
+.mastercardTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.projectDescription {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: .6rem;
+  max-width: 23rem;
+}
+
+.container .mastercard {
   width: 30rem;
   /* border: 1px solid black; */
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
-
 }
 
 .categoryHeader img {
