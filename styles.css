@@ -177,6 +177,7 @@ a {
   gap: 2rem;
   align-items: flex-start;
   min-width: 900px;
+  max-width: 900px;
   flex-shrink: 0;
 }
 
@@ -189,7 +190,7 @@ a {
   flex-direction: column;
 }
 
-.mastercardTitle {
+.projectTitle {
   font-family: "Playfair Display", serif;
   font-size: 2rem;
 }
@@ -204,10 +205,19 @@ a {
   max-width: 20rem;
 }
 
-.container .mastercard {
+.projectDescription--projThreeWidth {
+  max-width: 17rem;
+}
+
+.container .image {
   width: 30rem;
   /* border: 1px solid black; */
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banners {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .categoryHeader img {
