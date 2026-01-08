@@ -176,18 +176,26 @@ a {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
-  min-width: 900px;
-  max-width: 900px;
+  min-width: 800px;
+  max-width: 800px;
   flex-shrink: 0;
-}
-
-.projectCard--center {
-  align-items: center;
 }
 
 .projectText {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.projectText h2 {
+  line-height: 2rem;
+}
+
+.projectText--center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .projectTitle {
@@ -209,18 +217,23 @@ a {
   max-width: 17rem;
 }
 
-.container .image {
-  width: 30rem;
-  /* border: 1px solid black; */
+.projectCard img {
+  display: block;
+  width: 100%;
+}
+
+.inLightenScreens {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 18rem);
+}
+
+.inLightenItem {
+  overflow: hidden;
 }
 
 .banners {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-}
-
-.categoryHeader img {
-  display: block;
-  width: 100%;
+  gap: 1rem;
 }
