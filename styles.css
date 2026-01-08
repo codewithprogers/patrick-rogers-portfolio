@@ -233,6 +233,10 @@ a {
   grid-template-columns: repeat(3, 18rem);
 }
 
+.inLightenScreens--width {
+  grid-template-columns: repeat(2, 18rem);
+}
+
 .inLightenItem {
   overflow: hidden;
 }
