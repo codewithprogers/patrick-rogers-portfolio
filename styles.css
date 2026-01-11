@@ -242,8 +242,13 @@ a {
   grid-template-columns: repeat(2, 18rem);
 }
 
+.inLightenScreens--gridSpace {
+  gap: 1rem;
+}
+
 .inLightenScreens--brochureGrid {
   grid-template-columns: repeat(1, 18rem);
+  gap: 1rem;
 }
 
 .inLightenItem {
