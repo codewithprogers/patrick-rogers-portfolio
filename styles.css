@@ -138,6 +138,8 @@ a {
   gap: 4rem;
   overflow-x: auto;
   padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .projectCardsContainer {
@@ -157,6 +159,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  scroll-snap-align: start;
 }
 
 .dartFirst {
@@ -179,6 +182,7 @@ a {
   min-width: 800px;
   max-width: 800px;
   flex-shrink: 0;
+  scroll-snap-align: start;
 }
 
 .projectCard--width {
@@ -187,8 +191,8 @@ a {
 }
 
 .projectCard--brochureCardWidth {
-  min-width: 600px;
-  max-width: 600px;
+  min-width: 50px;
+  max-width: 5200px;
 }
 
 .projectText {
