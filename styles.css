@@ -141,6 +141,7 @@ a {
   display: flex;
   gap: 4rem;
   overflow-x: auto;
+  margin-top: 3rem;
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
