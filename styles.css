@@ -133,6 +133,10 @@ a {
   margin-top: 4rem;
 }
 
+.projectScroller::-webkit-scrollbar {
+  display: none;
+}
+
 .projectScroller {
   display: flex;
   gap: 4rem;
@@ -140,6 +144,7 @@ a {
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .projectCardsContainer {
@@ -182,7 +187,8 @@ a {
   min-width: 800px;
   max-width: 800px;
   flex-shrink: 0;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
 }
 
 .projectCard--width {
