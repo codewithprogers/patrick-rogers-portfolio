@@ -16,8 +16,28 @@ body {
   background-color: #f4f4ee;
 }
 
-header h1 {
-  font-size: 120px;
-  font-family: "Fjalla One", "Helvetica", sans-serif;
+header .scroll-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+header .scroll-track {
+  display: inline-flex;
+  animation: scroll-name 60s linear infinite;
+}
+
+header .scroll-track span {
+  font-size: 10rem;
+  flex-shrink: 0;
   color: orange;
+  font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
+}
+
+@keyframes scroll-name {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
