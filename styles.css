@@ -29,7 +29,7 @@ header .scroll-track {
 }
 
 header .scroll-track span {
-  font-size: 10rem;
+  font-size: clamp(4rem, 18vw, 10rem);
   flex-shrink: 0;
   color: orange;
   font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
