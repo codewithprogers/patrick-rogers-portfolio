@@ -9,3 +9,15 @@ hamburger.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
+
+const header = document.querySelector(".hero");
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  const headerHeight = header.offsetHeight;
+  const scrollAmount = window.scrollY;
+
+  const progress = Math.min(scrollAmount / headerHeight, 1);
+
+  navbar.style.setProperty("--nav-progress", progress);
+});
