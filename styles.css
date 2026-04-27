@@ -30,7 +30,7 @@ header .scroll-track {
 }
 
 header .scroll-track span {
-  font-size: clamp(4rem, 18vw, 10rem);
+  font-size: clamp(4rem, 18vw, 15rem);
   flex-shrink: 0;
   color: orange;
   font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
@@ -82,7 +82,7 @@ header .scroll-track span {
   flex-direction: column;
   font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
   line-height: 1;
 }
 
