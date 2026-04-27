@@ -64,7 +64,10 @@ header .scroll-track span {
   font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
 }
 
-.nav-options a:hover {
+.nav-options a:hover,
+.hamburger:hover,
+.mobile-menu a:hover,
+.close-menu:hover {
   opacity: 0.7;
 }
 
