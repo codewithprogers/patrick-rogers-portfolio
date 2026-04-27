@@ -58,10 +58,6 @@ header .scroll-track span {
   list-style: none;
 }
 
-.nav-options.active {
-  display: flex;
-}
-
 .nav-options a {
   text-decoration: none;
   color: black;
@@ -88,8 +84,50 @@ header .scroll-track span {
   cursor: pointer;
 }
 
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  background-color: #f4f4ee;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  padding-top: 30px;
+}
+
+.mobile-menu.active {
+  display: flex;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
+  font-size: 2rem;
+}
+
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 700px) {
-  .hamburger {
+  .hamburger,
+  .mobile-menu {
     display: none;
   }
 

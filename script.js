@@ -1,6 +1,11 @@
 const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav-options");
+const mobileMenu = document.querySelector(".mobile-menu");
+const closeMenu = document.querySelector(".close-menu");
 
 hamburger.addEventListener("click", () => {
-  nav.classList.toggle("active");
+  mobileMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
 });
