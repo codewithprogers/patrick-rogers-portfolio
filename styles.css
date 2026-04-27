@@ -50,6 +50,7 @@ header .scroll-track span {
   top: 0;
   z-index: 999;
   background-color: #f4f4ee;
+  margin-bottom: clamp(30px, 5vw, 100px);
 }
 
 .navbar::after {
