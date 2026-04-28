@@ -162,6 +162,7 @@ header .scroll-track span {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
   text-align: center;
   padding: clamp(40px, 10vh, 160px) 20px 0px;
 }
