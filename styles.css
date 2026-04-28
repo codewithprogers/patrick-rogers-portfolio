@@ -17,7 +17,7 @@ body {
   height: 4000px;
 }
 
-header .hero {
+.hero {
   margin: 0;
   padding: 0;
 }
@@ -172,7 +172,7 @@ header .scroll-track span {
 }
 
 .welcome-section p {
-  max-width: clamp(350px, 60vw, 650px);
+  max-width: clamp(280px, 60vw, 650px);
   margin: 0 auto;
 }
 
