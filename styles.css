@@ -17,10 +17,14 @@ body {
   height: 4000px;
 }
 
+header .hero {
+  margin: 0;
+  padding: 0;
+}
+
 header .scroll-wrapper {
   overflow: hidden;
   white-space: nowrap;
-  margin-bottom: 5px;
   line-height: 1.2;
 }
 
@@ -50,7 +54,6 @@ header .scroll-track span {
   top: 0;
   z-index: 999;
   background-color: #f4f4ee;
-  margin-bottom: clamp(30px, 5vw, 100px);
 }
 
 .navbar::after {
@@ -155,6 +158,24 @@ header .scroll-track span {
   cursor: pointer;
 }
 
+.welcome-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: clamp(40px, 10vh, 160px) 20px 0px;
+}
+
+.welcome-section h2 {
+  font-size: clamp(3rem, 10vw, 8rem);
+  line-height: 1.2;
+}
+
+.welcome-section p {
+  max-width: clamp(350px, 60vw, 650px);
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 700px) {
   .hamburger,
   .mobile-menu {
@@ -166,5 +187,9 @@ header .scroll-track span {
     flex-direction: row;
     list-style: none;
     gap: 15px;
+  }
+
+  .welcome-section {
+    padding: 160px 20px 0px;
   }
 }
