@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+:root {
+  --section-padding: clamp(40px, 10vh, 160px) 20px 0px;
+}
+
 html {
   font-size: 16px;
 }
@@ -158,13 +162,17 @@ header .scroll-track span {
   cursor: pointer;
 }
 
+.welcome-section,
+.projects {
+  padding: var(--section-padding);
+}
+
 .welcome-section {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
   text-align: center;
-  padding: clamp(40px, 10vh, 160px) 20px 0px;
 }
 
 .welcome-section h2 {
@@ -200,10 +208,10 @@ header .scroll-track span {
   justify-content: center;
   gap: 1em;
   grid-template-areas:
-  "box-1"
-  "box-2"
-  "box-3"
-  "box-4";
+    "box-1"
+    "box-2"
+    "box-3"
+    "box-4";
 }
 
 .projects h2 {
@@ -215,8 +223,8 @@ header .scroll-track span {
 }
 
 @media screen and (min-width: 500px) {
-  .welcome-section {
-    padding: 100px 20px 0px;
+  :root {
+    --section-padding: 100px 20px 0px;
   }
 
   .projects-grid {
@@ -225,12 +233,16 @@ header .scroll-track span {
     grid-template-rows: 200px 200px;
     gap: 1em;
     grid-template-areas:
-    "box-1 box-2"
-    "box-3 box-4";
+      "box-1 box-2"
+      "box-3 box-4";
   }
 }
 
 @media screen and (min-width: 700px) {
+  :root {
+    --section-padding: 150px 20px 0px;
+  }
+
   .hamburger,
   .mobile-menu {
     display: none;
@@ -241,10 +253,6 @@ header .scroll-track span {
     flex-direction: row;
     list-style: none;
     gap: 15px;
-  }
-
-  .welcome-section {
-    padding: 150px 20px 0px;
   }
 
   .projects-grid {
