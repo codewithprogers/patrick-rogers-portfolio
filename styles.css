@@ -177,6 +177,43 @@ header .scroll-track span {
   margin: 0 auto;
 }
 
+.graphic-design {
+  grid-area: box-1;
+}
+
+.dart-bank {
+  grid-area: box-2;
+}
+
+.odin-projects {
+  grid-area: box-3;
+}
+
+.view-all {
+  grid-area: box-4;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 200px 200px 200px 200px;
+  justify-content: center;
+  gap: 1em;
+  grid-template-areas:
+  "box-1"
+  "box-2"
+  "box-3"
+  "box-4";
+}
+
+.projects h2 {
+  font-family: "Fjalla One", "Helvetica", "Arial", sans-serif;
+}
+
+.project {
+  background-color: orange;
+}
+
 @media screen and (min-width: 700px) {
   .hamburger,
   .mobile-menu {
@@ -191,6 +228,17 @@ header .scroll-track span {
   }
 
   .welcome-section {
-    padding: 160px 20px 0px;
+    padding: 150px 20px 0px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 2em;
+    justify-content: center;
+    grid-template-areas:
+      "box-1 box-1 box-2"
+      "box-3 box-4 box-2";
   }
 }
