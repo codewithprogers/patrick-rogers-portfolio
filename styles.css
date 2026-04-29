@@ -214,6 +214,22 @@ header .scroll-track span {
   background-color: orange;
 }
 
+@media screen and (min-width: 500px) {
+  .welcome-section {
+    padding: 100px 20px 0px;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    gap: 1em;
+    grid-template-areas:
+    "box-1 box-2"
+    "box-3 box-4";
+  }
+}
+
 @media screen and (min-width: 700px) {
   .hamburger,
   .mobile-menu {
