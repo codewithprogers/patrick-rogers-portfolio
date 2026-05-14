@@ -1,3 +1,4 @@
+// Hamburger menu overlay
 const hamburger = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");
 const closeMenu = document.querySelector(".close-menu");
@@ -10,6 +11,7 @@ closeMenu.addEventListener("click", () => {
   mobileMenu.classList.remove("active");
 });
 
+// Loading navbar border
 const header = document.querySelector(".hero");
 const navbar = document.querySelector(".navbar");
 
